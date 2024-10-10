@@ -1,0 +1,136 @@
+body {
+    background-color: #36393f;
+    color: #dcddde;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#app {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#welcome {
+    text-align: center;
+    margin: auto;
+}
+
+#welcome input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #7289da;
+}
+
+#welcome button {
+    background-color: #7289da;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#sidebar {
+    width: 20%;
+    background-color: #2f3136;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#sidebar button {
+    background-color: #7289da;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#sidebar button:hover {
+    background-color: #5b6eae;
+    transform: scale(1.05);
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #4f545c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#chat-header {
+    background-color: #202225;
+    padding: 10px;
+    border-bottom: 1px solid #7289da;
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    color: white;
+    font-size: 1.2em;
+}
+
+.admin {
+    color: darkred;
+    font-size: 1.2em;
+}
+
+#message-input, #file-input {
+    border: none;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+button {
+    background-color: #7289da;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5b6eae;
+    transform: scale(1.05);
+}
+
+#messages img {
+    max-width: 400px;
+    border-radius: 5px;
+    margin: 10px 0;
+}

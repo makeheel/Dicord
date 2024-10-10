@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="welcome">
+            <h1>Добро пожаловать в чат</h1>
+            <input type="text" id="username" placeholder="Введите имя">
+            <button id="enter-chat">Войти</button>
+        </div>
+        <div id="sidebar" style="display:none;">
+            <img width="150px" height="100px" src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/jotahernandezv/phpZb0A0d.png" alt="">
+            <ul id="channels-list">
+                <li data-channel="general"># General</li>
+                <li data-channel="random"># Random(В РАЗРАБОТКЕ)</li>
+                <li data-channel="announcements"># Announcements(В РАЗРАБОТКЕ)</li>
+            </ul>
+        </div>
+        <div id="chat-container" style="display:none;">
+            <div id="chat-header">
+                <h2 id="current-channel"># General</h2>
+            </div>
+            <div id="chat">
+                <div id="messages"></div>
+                <input type="file" id="file-input" accept="image/*">
+                <input type="text" id="message-input" placeholder="Напишите сообщение...">
+                <button id="send-message">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.ably.com/lib/ably.min-1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
